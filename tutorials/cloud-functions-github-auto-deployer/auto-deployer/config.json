@@ -1,17 +1,27 @@
 {
-  "secretToken" : "[YOUR_SECRET_TOKEN]",
-  "stageBucket" : "[YOUR_STAGING_BUCKET_NAME]",
-  "location" : "[YOUR_REGION]",
+  "secretToken" : "5BF1FD927DFB8679496A2E6CF00CBE50C1C87145",
+  "stageBucket" : "staging.minibits-200710.appspot.com",
+  "location" : "us-central1",
   "deployments": [
     {
-      "repository":"[YOUR_REPOSITORY_1]",
-      "path":"[YOUR_FUNCTION_PATH_1]",
-      "functionName":"[YOUR_FUNCTION_NAME_1]"
+      "repository":"BlockchainGit/minutiae-serverless",
+      "path":"index.js",
+      "functionName":"setNote"
     },
     {
-      "repository":"[YOUR_REPOSITORY_N]",
-      "path":"[YOUR_FUNCTION_PATH_N]",
-      "functionName":"[YOUR_FUNCTION_NAME_N]"
+      "repository":"BlockchainGit/minutiae-serverless",
+      "path":"index.js",
+      "functionName":"getNote"
+    },
+    {
+      "repository":"BlockchainGit/minutiae-serverless",
+      "path":"index.js",
+      "functionName":"deleteNote"
+    },
+    {
+      "repository":"BlockchainGit/minutiae-serverless",
+      "path":"index.js",
+      "functionName":"listNotes"
     }
   ]
 }
